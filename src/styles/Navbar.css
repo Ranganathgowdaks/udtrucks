@@ -1,0 +1,25 @@
+.ud-navbar {
+  background-color: #b40000;
+  /* UD Trucks red */
+  padding: 0.8rem 1rem;
+}
+
+.ud-logo {
+  height: 40px;
+}
+
+.ud-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #e0e0e0 !important;
+}

@@ -1,0 +1,21 @@
+/* Make full viewport height and remove default margin */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Flex container to push footer to bottom */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* full viewport height */
+}
+
+/* Main content grows and pushes footer down */
+.main-content {
+  flex: 1;
+}
