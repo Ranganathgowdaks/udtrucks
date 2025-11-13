@@ -1,75 +1,91 @@
 .dailyprod-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-  font-family: Arial, sans-serif;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 10px;
 }
 
 .dailyprod-box {
-  border: 2px solid #b40000;
-  border-radius: 10px;
-  padding: 30px;
-  background-color: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  min-width: 500px;
-  max-width: 700px;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  padding: 20px;
+  margin-bottom: 35px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
 }
 
 .dailyprod-box h2 {
-  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 700;
   color: #b40000;
-  margin-bottom: 25px;
+  border-left: 6px solid #b40000;
+  padding-left: 10px;
 }
 
-.dailyprod-table {
+.newprod-table {
   width: 100%;
-  border-collapse: separate;
-  /* separate borders to show gaps */
-  border-spacing: 0 5px;
-  /* vertical gap between rows */
+  border-collapse: collapse;
+  background: white;
 }
 
-.dailyprod-table th,
-.dailyprod-table td {
-  border: 1px solid #b40000;
-  /* visible border for all cells */
-  padding: 15px 20px;
-  /* bigger cells for readability */
-  text-align: left;
+.newprod-table thead {
+  background: #f6f6f6;
 }
 
-.dailyprod-table th {
-  background-color: #b40000;
-  color: #fff;
-  border-radius: 5px 5px 0 0;
+.newprod-table th {
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
+  border-bottom: 2px solid #ddd;
 }
 
-.dailyprod-table tr:hover td {
-  background-color: #f5f5f5;
+.newprod-table td {
+  padding: 12px;
+  font-size: 15px;
+  border-bottom: 1px solid #eee;
+  color: #333;
 }
 
-.status.running {
-  color: green;
-  font-weight: bold;
+.newprod-table tr:nth-child(even) {
+  background: #fafafa;
 }
 
-.status.stopped {
-  color: red;
-  font-weight: bold;
+.newprod-table tr:hover {
+  background: #f3f3f3;
+  transition: 0.2s ease-in-out;
 }
 
-.status.maintenance {
-  color: orange;
-  font-weight: bold;
-}
-/* Dailyprod.css */
+/* Link styling */
 .server-link {
-  color: #b40000;
+  color: #0057b7;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .server-link:hover {
   text-decoration: underline;
-  color: #ff6666;
+}
+
+/* Status badges */
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-badge.running {
+  background: #e9f7ef;
+  color: #2e7d32;
+}
+
+.status-badge.stopped {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.status-badge.maintenance {
+  background: #fff8e1;
+  color: #f57f17;
 }
